@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-color: greenyellow;
+    font-family: sans-serif;
+}
+#content {
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+#content h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    padding-top: 3rem;
+}
+.navbar_div {
+    position: inherit;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 5rem;
+    margin-top: 4.5rem;
+}
+.navbar_div .link1, .navbar_div .link2, .navbar_div .link3 {
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    transition: .2s ease;
+}
+.navbar_div .link1:hover, .navbar_div .link2:hover, .navbar_div .link3:hover {
+    margin-top: -10px;
+    cursor: pointer;
+}
+.active {
+    border-top: 4px solid white;
+}
+.orderDiv {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+    margin: 1rem auto;
+    text-align: center!important;
+    font-size: 20px;
+    padding: 2rem 0;
+    border: 2px solid;
+}
+.orderDiv > img.orderImage {
+    width: 20rem;
+    height: 22rem;
+    margin: 2rem;
+    border-radius: 50%;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 15px 0;
+}
+.footer > p {
+    font-size: 20px;
+}
+.footer  .githublogo{
+    width: 20px;
+    margin-left: 10px;
+}
+.footer  .githublogo:hover {
+    cursor: pointer;
+    width: 25px;
+}
+
+/* menu section */
+.orderDiv div {
+    margin: 2rem auto;
+    width: 25rem;
+    min-width: 25rem;
+    border: 2px solid;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+.orderDiv img {
+    width: 220px;
+    margin-top: 50px;
+}
+
+/* about section */
+
+.orderDiv .phoneImg {
+    width: 20px;
+    transform: translate(-5px, 2px);
+}
+.orderDiv .aboutImg {
+    width: 20px;
+}
+.orderDiv .about-p {
+    margin: 0 auto;
+}
+.orderDiv .about-h1 {
+    font-size: 20px!important;
+    text-align: center;
+    margin: 0 auto;
+}
+.orderDiv .about-image {
+    width: 60%;
+    margin: 1rem auto;
+}
+@media screen and (min-width:767px){
+    .orderDiv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
